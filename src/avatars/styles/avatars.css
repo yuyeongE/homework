@@ -1,1 +1,49 @@
-/* 여기에 스타일을 구현해 주세요 */
+.avatars-wrapper {
+  width: 320px;
+  display: flex;
+  gap: 20px;
+}
+
+.avatars-item {
+  position: relative;
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.avatars-item img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatars-status {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #dbdbdb;
+  bottom: -15px;
+  right: -40px;
+  border: 2px solid white;
+}
+
+.avatars-status--online {
+  background: #4cfe88;
+}
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
